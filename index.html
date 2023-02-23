@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content ="IE=edge">
+        <meta name="viewport" content ="width=device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel ="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c2bf4c8d7f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.jpeg" class="logo">
+                    <ul> 
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#achievement">Achievement</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p> Web Developer & Designer Intern</p>
+                    <h1> Hi, I'm <span>Khushali</span><br> Khairnar From Pune</h1>
+                </div>
+            </div>
+        </div>
+        <!---------------ABOUT--------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/khushiportfolio.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>My name is Khushali Sandeep Khairnar.I'm a Third year Computer Science student at Bharati Vidyapeeth College of Engineering,Lavale,Pune.
+                           I was born and raised in Pune. I have a work experience as a Web Developer intern at CodeClause.Intrested both in back and front-end 
+                           technologies,knowledgeable with JS,CSS,HTML and Python.I like to travel.I belive travelling gives you a new perspective to everything.
+                           You get to know a lot about the different Cultures,the cuisines,their history,the language and all the small unique things every place 
+                           has to offer.
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('Training attended')">Training Attended</p>
+                            <p class="tab-links"onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> <span>HTML</span><br>Hypertext Markup Language or HTML is the standard markup language
+                                for documents designed to be displayed in a web browser.</li>
+                                <li> <span>CSS</span><br>Style Sheets(CSS) is a stylesheet language used to describe
+                                the presentation of a document written in HTML or XML.</li>
+                                <li> <span>JavaScript</span><br>JS is a lightweight,interpreted or just-in-time compiled programming
+                                language with first-class function.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Training attended">
+                            <ul>
+                                <li> <span>ZENSAR ESD Training</span><br>In MySQL</li>
+                                <li> <span>Artificial Intelligence Workshop</span><br>At Bharati Vidyapeeth College of Engineering,lavale</li>
+                                <li> <span>Participated in Smart India Hackathon</span><br>At Bharati Vidyapeeth College of Engineering,lavale</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="education">
+                            <ul>
+                                <li> <span>2024</span><br>Pursuing B.E from Bharati Vidyapeeth College of Engineering,lavale,Pune</li>
+                                <li> <span>2020</span><br>HSC from S.M.V Jr. College,Pune</li>
+                                <li> <span>2018</span><br> SSC from DR.D.Y Patil English Medium School,Pune</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------Achievements--------------------->
+        <div id="achievement">
+            <div class="container">
+                <h1 class="sub-title"> My Achievement</h1>
+                <div class="achievement-list">
+                    <div>
+                    
+                        <h2>Certified in C , CPP , DSA   and Java</h2>
+                        <P>
+                            From VowTech IT Training Center
+                             and Software Development,Pune.
+                        </P>
+                    </div>
+                    <div>
+                        <h2>Certified in Barclays LifeSkills Programme</h2>
+                        <P>
+                            Conducted by GTT Foundation at Bharati Vidyapeeth College
+                            of Engineering ,Lavale,Pune.
+                        </P>
+                    </div>
+                    <div>
+                        <h2>Certified in International Online Workshop</h2>
+                        <P>
+                            Under NDLI on skill enhancement,interships and career opportunities
+                            in salesforce by Intelogik solution.
+                        </P>
+                    </div>
+
+                </div>
+                 
+            </div>
+
+        </div>
+<!---------------------------CONTACT------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>khushalikhairnar21@gmail.com</p>
+                <p><i class ="fas fa-phone-square-alt"></i>9325178171</p>
+                <div class="social-icons">
+                    <a href=""><i class= "fab fa-facebook"></i></a>
+                    <a href=""><i class= "fab fa-twitter-square"></i></a>
+                    <a href=""><i class= "fab fa-instagram"></i></a>
+                    <a href=""><i class= "fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf"download class="btn btn2">Download CV</a>
+
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name"required>
+                    <input type="email" name="email"placeholder="Your Email"required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Khushali Khairnar   </p>
+        
+    </div></div>
+
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }    
+        </script>
+
+    </body>
+</html>
